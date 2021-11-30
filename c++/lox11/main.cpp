@@ -65,6 +65,31 @@ void fourth()
         cout << a[i];
     }
 }
+void fifth()
+{
+    int temp, step = 5;
+    const int size = 10;
+    int array[size];
+
+
+
+    for(int i = 0; i < size; i++ )
+    {
+        array[i] = i;
+    }
+
+    for (int i = 0, j; i < step; ++i)
+    {
+        temp = array[0];
+        for (j = 0; j < size - 1; ++j)
+            array[j] = array[j + 1];
+        array[j] = temp;
+    }
+    for(int i = 0; i < size; i++)
+    {
+        cout << array[i];
+    }
+}
 void sixth()
 {
     const int N = 10;
